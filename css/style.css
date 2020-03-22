@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Josefin Sans", sans-serif;
     background-image: url("../media/hero.jpg");
@@ -27,9 +36,8 @@ body {
 
 .navbar {
     font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    background-color: #393a3c;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 30px;
 }
 
 #main-nav {
@@ -59,6 +67,7 @@ body {
     font-size: 22px;
     margin-top: 10px;
     margin-left: 20px;
+    max-width: 70px;
 }
 
 #navbar-toggle {
@@ -125,7 +134,7 @@ body {
 
 .button {
     color: white;
-    background: blue;
+    background: #f3a226;
     padding: 18px 15px;
     font-size: 20px;
     display: inline-block;
@@ -143,7 +152,7 @@ body {
     height: 50px;
     margin: auto;
     position: absolute;
-    top: 50%;
+    top: 30%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -155,7 +164,7 @@ body {
 
 h2 {
     font-size: 64px;
-    color: #b76cce;
+    color: #e64c28;
 }
 
 .middle {
