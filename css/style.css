@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-image: url("../media/hero.jpg");
+    /* for Opera 9.5 */
+    margin: 0;
+    /* to remove the default white margin of body */
+    padding: 0;
+    /* to remove the default white margin of body */
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+    -moz-background-size: cover;
+    /* optional for Firefox 3.6 */
+    -o-background-size: cover;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+}
+
+#main-nav {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
+#main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.nav-links,
+#logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#logo:hover,
+.nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+#logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+#navbar-toggle:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    #main-nav {
+        display: flex !important;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    #logo {
+        margin-top: 0;
+    }
+    #navbar-toggle {
+        display: none;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 5;
+    grid-gap: 5px;
+    /* float: left; */
+    width: auto;
+    padding: -2px 139px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+}
+
+.button {
+    color: white;
+    background: blue;
+    padding: 18px 15px;
+    font-size: 20px;
+    display: inline-block;
+    float: left;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.button:last-child {
+    margin-left: 10px;
+}
+
+#buttons {
+    width: 351px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.but {
+    padding-bottom: 100px;
+}
+
+h2 {
+    font-size: 64px;
+    color: #b76cce;
+}
+
+.middle {
+    text-align: center;
+}
+
+.svg-inline--fa {
+    color: white;
+}
+
+p {
+    font-size: 32px;
+    color: #fff
+}
+
+.meal {
+    padding-top: 70px;
+}

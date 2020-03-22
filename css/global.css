@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background-image: url("../media/group.jpg");
+    /* for Opera 9.5 */
+    margin: 0;
+    /* to remove the default white margin of body */
+    padding: 0;
+    /* to remove the default white margin of body */
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* for IE9+, Safari 4.1+, Chrome 3.0+, Firefox 3.6+ */
+    -webkit-background-size: cover;
+    /* for Safari 3.0 - 4.0 , Chrome 1.0 - 3.0 */
+    -moz-background-size: cover;
+    /* optional for Firefox 3.6 */
+    -o-background-size: cover;
+}
+
+.wrapper {
+    text-align: center;
+    display: inline-block;
+}
+
+.centreButtons {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%
+}
+
+button.button {
+    font-size: 32px;
+    padding: 5px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.welcome {
+    color: #fff;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .centreButtons {
+        text-align: center;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 3%
+    }
+    button.button {
+        font-size: 26px;
+        padding: 5px;
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid white;
+        margin: 10px;
+    }
+}
+
+.brands {
+    text-align: center;
+    color: #fff;
+}
+
+.arrow {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
