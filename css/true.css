@@ -368,9 +368,9 @@
             align-items: center;
             justify-content: space-between;
             background-color: #00BAF0;
-            background: black;
+            background: #fff;
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            color: #FFF;
+            color: #000;
             height: 80px;
             padding: 1em;
         }
@@ -405,7 +405,7 @@
         .menu-button::before,
         .menu-button::after {
             display: block;
-            background-color: #fff;
+            background-color: #000;
             position: absolute;
             height: 4px;
             width: 30px;
@@ -633,4 +633,81 @@
         
         p {
             font-size: large;
+        }
+        
+        .navbar {
+            font-size: 18px;
+            background-color: #393a3c;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        
+        #main-nav {
+            list-style-type: none;
+            display: none;
+            flex-direction: column;
+        }
+        
+        #main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+        
+        .nav-links,
+        #logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        #logo:hover,
+        .nav-links:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        #logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+            max-width: 70px;
+        }
+        
+        #navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+        
+        #navbar-toggle:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+            #main-nav {
+                display: flex !important;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            #main-nav li {
+                margin: 0;
+            }
+            .nav-links {
+                margin-left: 40px;
+            }
+            #logo {
+                margin-top: 0;
+            }
+            #navbar-toggle {
+                display: none;
+            }
         }
